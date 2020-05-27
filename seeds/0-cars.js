@@ -5,8 +5,8 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('cars').insert([
-        {make: 'Ford Fiesta'},
-        {make: 'Honda Civic'}
+        {VIN: 1234, Make: 'Ford Fiesta', Model:'Fiesta', Mileage: 431, "Transmission Type": 'qwety qwerty qwertyqwe treyqw trq'},
+        {VIN: 5678, Make: 'Honda', Model:'Civic', Mileage: 4531, "Transmission Type": 'qwety qwerty qwertyqwe treyqw trq'}
       ]);
     });
 };
