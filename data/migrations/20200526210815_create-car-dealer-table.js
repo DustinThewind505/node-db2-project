@@ -1,11 +1,12 @@
 exports.up = function(knex) {
     return knex.schema.table('cars', tbl => {
       tbl.string('Model')
+      tbl.string('Make')
       tbl.string('VIN')
       tbl.decimal('Mileage')
   
-      tbl.string('Clean')
-      tbl.string('Salvage')
+      tbl.string('transmission type')
+      tbl.string('status of the title')
   })
   };
   
